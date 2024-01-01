@@ -1,5 +1,6 @@
 type Query {
     bookById(id: ID): Book
+    employeeById(id: ID): Employee
 }
 
 type Book {
@@ -13,4 +14,16 @@ type Author {
     id: ID
     firstName: String
     lastName: String
+}
+
+type Employee {
+    employeeID: ID
+    firstName: String
+    lastName: String
+    email: String
+    phoneNumber: String
+    hireDate: String
+    commissionPct: String
+    jobId: String
+
 }
